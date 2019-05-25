@@ -11,8 +11,7 @@
 \usepackage{amsfonts}       % blackboard math symbols
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
-
-\usepackage[final]{graphicx}
+\usepackage[final]{graphicx}% graphics
 \usepackage{lipsum}
 
 \title{HOLOEXPO \emph{conference} preprint}
@@ -109,18 +108,8 @@ produces
 
 \subsection{Figures}
 \lipsum[10] 
-See Figure \ref{fig:fig1}. Here is how you add footnotes. \footnote{Sample of the first footnote.}
+See Figure \ref{fig:figure_label}. For more explanations. \footnote{Sample of the first footnote.}
 \lipsum[11] 
-
-\begin{figure}
-  \centering
-  %\fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-  \includegraphics[width=15cm,height=16cm]{./figures/figure.png}
-  \caption{The Topological Axis. Double natural logarithms (y = lnln(Y)) of main dimensionless physical quantities 
-(Y) corresponds to the String dimension series n = 4k + 2, from k = 0 to k = 7, showing the Bott
-periodicity 8 [19] which is at the origin of the name `Topological Axis.}
-  \label{fig:figure_label}
-\end{figure}
 
 \begin{figure}
   \centering
@@ -158,6 +147,15 @@ See awesome Table~\ref{tab:table}.
 \item Aliquam dignissim blandit est, in dictum tortor gravida eget. In ac rutrum magna.
 \end{itemize}
 
+\begin{figure}
+  \centering
+  %\fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+  \includegraphics[width=15cm,height=16cm]{./figures/figure.png}
+  \caption{The Topological Axis. Double natural logarithms (y = lnln(Y)) of main dimensionless physical quantities 
+(Y) corresponds to the String dimension series n = 4k + 2, from k = 0 to k = 7, showing the Bott
+periodicity 8 [19] which is at the origin of the name `Topological Axis.}
+  \label{fig:figure_label}
+\end{figure}
 
 \bibliographystyle{unsrt}  
 %\bibliography{references}  %%% Remove comment to use the external .bib file (using bibtex).
