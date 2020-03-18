@@ -1,18 +1,36 @@
-\documentclass{article}
-
-
+\documentclass[a4paper,9pt]{article}
+%\documentclass{aa}
 \usepackage{conference}
-
-\usepackage[utf8]{inputenc} % allow utf-8 input
-\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
-\usepackage{hyperref}       % hyperlinks
-\usepackage{url}            % simple URL typesetting
+\usepackage{latexsym}
+\usepackage[perpage,symbol*]{footmisc}
+%\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{textcomp}
+\usepackage[french]{babel}
+\usepackage{amssymb,amsfonts,amsmath}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage[varg]{txfonts}
 \usepackage{booktabs}       % professional-quality tables
-\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{tabularx}
+\usepackage{enumerate}
+%\usepackage{enumitem}
+\usepackage{multicol}
+
+
+
+%\documentclass{article}
+%\usepackage{conference}
+%\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+%\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+%\usepackage{booktabs}       % professional-quality tables
+%\usepackage{amsfonts}       % blackboard math symbols
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
-\usepackage[final]{graphicx}% graphics
-\usepackage{lipsum}
+%\usepackage[final]{graphicx}% graphics
 
 \title{Retour vers le \emph{cosmos}}
 %{F.M. Sanchez,\ M. Grosmann,\ B. Kress,\ N. Flawisky,\ L. Gueroult, \textit{Cosmic Holography}}
@@ -21,20 +39,20 @@
   Department of Physics\\
   Paris 11 University\\
   Paris, FRANCE \\
-  \texttt{hol137@yahoo.fr} \\
+  \texttt{hol137-at-yahoo.fr} \\
   %% examples of more authors
    \And
  M.H. Grosmann\thanks{Retired Professor} \\
   Department of Photonics\\
   University of Strasbourg\\
   Strasbourg, FRANCE \\
-  \texttt{michel.grosmann@me.com} \\
+  \texttt{michel.grosmann-at-me.com} \\
    \And
  D. Tassot\thanks{Retired Professor} \\
   Ecole des Mines\\
   %University of Strasbourg\\
   %Strasbourg, FRANCE \\
-  \texttt{tassot@me.com} \\
+  \texttt{d.tassot-at-me.com} \\
   %% \AND
   %% Coauthor \\
   %% Affiliation \\
@@ -56,10 +74,12 @@
 \begin{document}
 \maketitle
 
-\begin{abstract}
-%\lipsum[1]
-Le modèle du ”Big-Bang”, le modèle ”Cosmhologique”, les radars de la police et les taupes très myopes !
-\end{abstract}
+%\begin{abstract}
+%Le modèle du ”Big-Bang”, le modèle ”Cosmhologique”, les radars de la police et les taupes très myopes !
+%\end{abstract}
+
+
+%\{tableofcontents}
 
 
 % keywords can be removed
@@ -72,17 +92,17 @@ Le modèle dit du Big-Bang est une description de l'origine et de l'évolution d
 
 De façon générale, le terme « Big Bang » est associé à toutes les théories qui décrivent notre Univers comme issu d'une dilatation rapide. Par extension, il est également associé à cette époque dense et chaude qu’aurait connue l’Univers il y a 13,8 milliards d’années, (sans que cela préjuge forcément de l’existence d’un « instant initial » ou d’un commencement à son histoire).
 
-\section{Le modèle du ”Big-Bang”}
+\subsection{Le modèle du ”Big-Bang”}
 \label{sec:headings}
 
 Le terme a été initialement proposé en 1927 par l'astrophysicien  et chanoine catholique belge Georges Lemaître, qui décrivait dans les grandes lignes l’expansion de l'Univers, plus précisément décrite par l'astronome américain Edwin Hubble en 1929. Ce modèle fut désigné pour la première fois sous le terme ironique de « Big Bang » lors d’une émission de la BBC, The Nature of Things en 1949 (dont le texte fut publié en 1950), par le physicien britannique Fred Hoyle. Lui-même préférait les modèles d'état stationnaire.
 
-Voir Section \ref{sec:headings}.
+%Voir Section \ref{sec:headings}.
 
-\subsection{Concept General}
+\subsubsection{Concept General}
 %\lipsum[5]
 Le concept général du Big Bang, à savoir que l’Univers est en expansion et a été plus dense et plus chaud par le passé, doit sans doute être attribué au Russe Alexandre Friedmann, qui l'avait proposé en 1922, cinq ans avant Lemaître. Son assise fut cependant considérée comme mieux établie en 1965 avec la découverte du fond diffus cosmologique. Georges Lemaître le qualifia d’« éclat disparu de la formation des mondes, attestant de façon définitive la réalité de l’époque dense et chaude de l’Univers primordial ». Albert Einstein, en mettant au point la relativité générale, aurait pu déduire l'expansion de l'Univers, mais a préféré modifier ses équations en y ajoutant sa constante cosmologique, car il était persuadé que l'Univers devait être statique.
-vide
+
 Le terme de « Big Bang chaud » (« Hot Big Bang ») est parfois utilisé initialement pour indiquer que, selon ce modèle, l’Univers était plus chaud quand il était plus dense.
 
 \subsubsection{Partisans et adversaires: la controverse}
@@ -94,9 +114,8 @@ Dès le début, ce modèle fut jugé séduisant par tous les amateurs d'un conce
 
 Par ailleurs de grandes critiques furent présentées sur les évaluations numériques de l'espace et du temps aux grandes distances envisagées : Dans ce modèle, les mesures de temps et d'espaces sont les unes et les autres basées sur le « décalage spectral » dû à l'effet Doppler. Dans le principe ceci ressemble à la mesure par les radars de la police de la vitesse des véhicules : 
 
-Si un objet vibrant à une fréquence f1 s'éloigne de nous avec une vitesse V, nous le percevons (à cause de la vitesse limitée de la lumière) comme vibrant avec une fréquence f2 plus petite, (on dit «  décalée vers le rouge »). La mesure de la différence Df = f1 – f2 permet d'évaluer la « vitesse d'éloignement » de l'objet par rapport à l'observateur. 
+Si un objet vibrant à une fréquence f1 s'éloigne de nous avec une vitesse V, nous le percevons (à cause de la vitesse limitée de la lumière) comme vibrant avec une fréquence f2 plus petite, (on dit «  décalée vers le rouge »). La mesure de la différence $Df = f1 – f2$ permet d'évaluer la « vitesse d'éloignement » de l'objet par rapport à l'observateur. 
 
-%\lipsum[7]
 Pour les « objets célestes » proches de nous on peut mesurer les positions et les vitesses par triangulation. Des mesures expérimentales permirent de comparer les valeurs de distances et vitesses obtenues par triangulation et les valeurs de «  décalage spectraux ». Hubble et Humason constatèrent une proportionnalité entre les valeurs des positions et des vitesses et présentèrent cette proportionnalité (« Lois de Hubble ») comme une observation expérimentale. Mais cette proportionnalité découle naturellement du fait que ces valeurs sont respectivement obtenues en multipliant le décalage Df par un coefficient A pour la première et B pour la seconde ! Elle est donc simplement le quotient de A par B !
 
 Pour les objets célestes trop éloignés pour permettre des mesures géométriques des distances et des vitesses une autre méthode d'évaluation fut découverte : des objets célestes, les « céphéides » présentent une luminosité qui varie périodiquement. La mesure de la fréquence correspondante permet une « autre évaluation » de la distance et de la vitesse. Elle semble confirmer le modèle du BIG-BANG.
@@ -109,7 +128,7 @@ Leurs adversaires rétorquent que « justement cela reste à démontrer » et qu
 
 Depuis bientôt un siècle, les controverses ne font que s'amplifier. La Science-Fiction a inspiré de nouvelles idées et concepts sur les « temps » et les « espaces » : virtualités, multivers, trous de vers, etc …
 
-\section{Le ”modèle Cosmhologique"}
+\subsection{Le ”modèle Cosmhologique"}
 \label{sec:headings}
 
 Dans ce modèle il n'y a pas de « début » ni de « fin » de l'Univers.
@@ -131,6 +150,340 @@ Ce modèle permet de réconcilier les contradictions entre MACRO- et micro- Phys
 Certaines vérifications expérimentales pourront être prochainement effectuées par des satellites en projet et par des expériences, lors du redémarrage dans 2 ans du CERN à Genève.
 
 
+\section{Chapitre 1. Le concept de Cosmos à travers les ages}
+
+
+\section{Chapitre 2. Le testament de Pythagore}
+
+
+
+\section{Chapitre 3. Le désenchantement des sciences modernes}
+
+
+\subsection{La Science, cette inconnue}
+
+L'incompréhension générale de ce qu'est réellement la Science est illustrée par la célèbre formule d'Einstein "le plus incompréhensible est que le Monde soit compréhensible". Car la Science, qui se confondait jadis avec la Philosophie, terme forgé par Pythagore, le premier véritable homme de Science,  était unifiée, contrairement à l'actuelle éclatement des sciences, et concerne au premier chef le Monde, c'est-à-dire le Cosmos, la préoccupation centrale de Pythagore.
+
+Donc, fondamentalement, la Science, ou Philosophie Naturelle, est la connaissance et compréhension du Cosmos, ce qui signifie sémantiquement un Univers bien ordonné. Noter que la cosmologie officielle définit l'Univers comme 'un ensemble de particules en interaction', donc régies par certaines lois. Mais il ne suffit pas qu'il y ait des lois, encore faut-il qu'elles soient bonnes, c'est-à-dire esthétiques,  acceptables par l'esprit humain. Il faut donc répondre à Einstein:
+
+\textit {Le plus compréhensible, c'est que l'humain soit cosmique}
+
+Cela implique que seule la connaissance du Cosmos peut expliquer ce qu'est l'humain et la Science. Pour cette raison, certains ont traité l'humain "d'animal cosmique", et introduisent une "conscience cosmique". En particulier, l'hypothèse d'un Cosmos calculateur implique que l'humain soit aussi calculateur, ce qui explique son attrait pour les nombres et l'harmonie musicale, liaison prêtée à Pythagore, qui, plus généralement, affirmait que tout est nombre. Mais Pythagore ne considérait que des nombres entiers : il anticipait ainsi la Physique Quantique.  
+
+Celle-ci s'est imposée d'abord par l'observation des cristaux manifestant des formes géométriques spectaculaires, puis par la "loi des proportions définies" qui régit le nombre d' atomes composant une molécule. Le plus souvent ces rapports sont simples, ainsi l'eau se compose de 2 parties d' Hydrogène pour 1 partie d'Oxygène. Les nombres entiers sont aussi apparus dans les longueurs d'onde spectrales, puis dans les interactions lumière-matière (Planck-Poincaré). A ce sujet l'intervention de Poincaré fut décisive, car Planck ne pouvait admettre une telle quantification.
+
+D'où venait cette réticence de Planck ? C'est que Pythagore avait été oublié, comme montré dans le chapitre précédent, et les formalistes avaient voulus prendre le pouvoir. Les mathématiciens s'étaient séparés en trois groupes, les intuitionnistes, les formalistes et les logiciens. Les premiers, comme Poincaré, veulent rester en contact avec le Monde. Mais les formalistes, tel Hilbert, veulent tout axiomatiser à partir de l'Arithmétique. C'est ainsi que son sixième problème à résoudre parmi les 23 du millénium de 1900 était "d'axiomatiser la physique". On voit l'audace outrancière d'une telle proposition. 
+
+Quant aux logiciens, ils voulaient pousser l'axiomatisation à son extrême, en démontrant l'Arithmétique elle-même. C'est ainsi que Bertrand Russell, dans son "Acta Mathematica" démontra 1 + 1 = 2, après 180 pages. Il est significatif que ce soit un soi-disant "philosophe" qui se soit livré à un si grotesque exercice. Cela illustre le fait que les philosophes modernes ont détesté les nombres entiers de Pythagore. Le ridicule de la situation fut dénoncé plus tard par le "théorème d'incomplétude" de Gödel. Il fut suivi par les informaticiens Turing et Von Neumann qui établirent "un théorème d'indécidabilité". 
+
+Mais cela ne découragea pas les formalistes et les logiciens, qui finirent par vouloir introduire le formalisme dans l'enseignement des mathématiques modernes, avec les conséquences désastreusess que l'on sait. 
+
+De plus, Von Neumann osa même proposer un "théorème de complétude de la Théorie Quantique", qui fit autorité, avant d'être réfuté, mais seulement beaucoup plus tard, par David Bohm. C'était un rejet total du Cosmos, en ce sens que le hasard est censé intervenir en microphysique. Cela s'appuyait sur le principe d'indétermination de Heisenberg, qui n'était en fait qu'une simple application de la complémentarité onde-particule, le concept le plus troublant, et incompris, de la physique moderne.
+
+Le célèbre professeur Feynman, après avoir avoué dans ses célèbres cours de physique que personne ne comprenait rien à la physique quantique, aurait avancé la phrase décisive suivante : la lumière se propage par onde mais se réceptionne par quanta. Malheureusement, il ne tira pas de cela la leçon assez évidente suivante: la propagation par onde concerne l'Espace Cosmique, car l'onde est la propension à envahir tout l'espace disponible, tandis que la réception quantique est l'apanage d'une sélection cosmique calculatoire spatio-temporelle ultra-précise qui veut que toute l'énergie, au départ concentrée sur un seul atome, se retrouve en final, intégralement, sur un autre. On ne peut qu'apprécier l'extrême beauté, ce sens annexe du mot cosmos, de cette complémentarité Cosmos-Atome. 
+
+Einstein eut été bien inspiré d'approfondir cette liaison Cosmos-Atome, comme on le verra plus loin. Il eut le mérite de s'opposer au hasard quantique quand il déclara "Dieu ne joue pas aux dés". Mais il eut le tort d'introduire le concept de "photon libre". Il le reconnut implicitement quand il déclara 'si on vous dit avoir compris le photon, vous répondrez que c'est mensonge".
+
+Généralisant la phrase ci-dessus de Feynman, on en déduit que tout se propage par onde, y compris la matière. Avec pour conséquence que chaque objet est construit et déconstruit en permanence, dans une oscillation très rapide. Autrement dit le Big Bang est permanent. La symétrie matière-antimatière s'interprète alors par une oscillation entre matière et antimatière. 
+
+Ainsi chacun est le centre d'une bulle "Univers" qui le construit et le déconstruit en permanence. Le Cosmos se présente donc comme disait Pascal: une sphère dont le centre est partout et la circonférence nulle part.
+
+De plus, en introduisant un sens de rotation précis lors du balayage universel de reconstruction, cela introduit la "violation de la parité", c'est-à-dire la dissymétrie droite-gauche des réactions entre particules. 
+
+A noter qu'on retrouve cette chiralité dans les molécules biologiques. Un sucre "inversé", c'est-à-dire qui a une orientation différente dans l'agencement de ses atomes, apparaît lors des synthèses chimiques, mais n'a aucun goût, ni aucune action biologique. Le fait que toute vie sur terre correspond au même ADN et avec la même orientation exclut l'intervention du hasard en biologie. En effet si le hasard jouait, la vie serait apparue plusieurs fois, avec les deux orientations possibles.
+
+Cette oscillation matière-antimatière ouvre la porte à une explication simple de la mystérieuse "matière noire" qui constitue 25 \% de l'Univers. Ce serait une oscillation en quadrature, donc incapable de réagir avec la matière ordinaire. 
+
+
+\subsection{Le carcan du réductionnisme moderne}
+
+    Mais la Science a été trahie de façon encore plus profonde que ces divagations des formalistes et logiciens: on a systématiquement remplacé le raisonnement holistique naturel par le "réductionnisme". Au lieu d'expliquer les parties par le tout, on a prétendu expliquer le tout par les parties. C'est l'origine de l'éclatement de la Science en plusieurs disciplines officielles.
+
+     En particulier, la Biologie s'est trouvée séparée car s'il est relativement facile de comprendre que chez l'être vivant les parties sont ordonnées au tout, les soi-disant scientifiques contemporains pensent qu'il n'en est rien dans le monde inerte. 
+
+    Comme échappatoire, on invoque le concept d'"émergence" pour dire que "le tout est supérieur à l'addition de ses parties". Bien entendu, il faut introduire au contraire le "principe d'immergence", selon lequel, le tout explique l'agencement des parties. 
+
+    Il est significatif que ce terme d'immergence soit un parfait néologisme. Autrement dit, le concept de Cosmos a été éradiqué de la pensée commune depuis longtemps. On peut attribuer l'origine de cette déviation au siècle des soi-disant "lumières" où Descartes, en particulier, cherchait à expliquer le mouvement des astres par des tourbillons d'éther faisant avancer les planètes dans le même sens. Hélas pour lui, on s'aperçut que certaines comètes avaient un mouvement rétrograde.
+
+
+\subsection{Les principes holistiques}
+
+Pour résoudre une question de physique il y a deux types de méthodes. L'une, réductionniste, consiste à étudier chaque détail dans un déroulement temporel. L'autre, holistique, invoque des principes généraux de conservation.
+
+Le principe de la conservation d'énergie est le plus connu. L'énergie apparaît comme la monnaie d'échange universelle dans les interactions. Le simple fait que l'énergie ne peut être créée, mais seulement être transformée, selon le mot de Lavoisier, qui s'applique particulièrement bien à l'énergie : "Rien ne se perd, rien ne se crée, tout se transforme", montre que le Cosmos est un calculateur.  En effet, on voit mal comment une ménagère pourrait équilibrer son budget mensuel sans calculer.
+
+La fameuse énergie sombre, qui constituerait 70 \% de l'énergie dans l'Univers, n'est qu'un faux problème, car les formules élémentaires de la physique de niveau bac montrent que l'énergie gravitationnelle de l'Univers n'est que 30\% de l'énergie totale (note N.3.1). 
+
+La grande majorité des cosmologues a suivi la première méthode réductionniste, en partant d'équations locales pour en espérer déduire le tout. Voila l'origine des problèmes terribles qu'ils rencontrent actuellement, détaillés chapitre 5. Par contre une minorité a voulu établir la cosmologie sur des grands principes, en particulier le Principe Cosmologique Parfait, qui veut que l'Univers est partout le même et en tout temps. C'est cette dernière condition temporelle, qui lui vaut l'adjectif de "parfait" qui fait toute la différence entre cette cosmologie stationnaire et la cosmologie officielle. Pour cette dernière il y a eu un Big Bang initial. Comme suggéré plus haut il faut le remplacer par un Big Bang permanent, ce qui sera prouvé par le principe holistique le plus simple, le Principe Holographique.
+
+ Le Principe Holographique décrit la conservation de l'information dans un Cosmos parfaitement ordonné. L'exemple le plus simple s'applique à un disque de rayon unité : sa circonférence est le double de son aire, ce qui est le testament qu'Archimède a fait inscrire sur sa tombe. La note 3.2 rappelle comment ce simple facteur 2 est le même que celui qui figure dans l'énergie cinétique élémentaire, et la relation critique d'un trou noir.
+
+La forme diophantienne, c'est-à-dire purement arithmétique, du Principe Holographique est le Principe Holique, dont le représentant le plus simple est la 3ième loi de Képler, qu'il mis 10 ans après avoir trouvé les 2 premières (la forme elliptique et la loi des aires), à savoir la proportionnalité du cube des rayons avec le carré des périodes. La note 3.3 montre que la symétrie entre les constantes cosmiques G et h définies ci-dessous conduit à l'Univers critique.
+
+\subsection{Les constantes cosmiques et l'Univers d'Eddington}
+
+Newton avait l'esprit cosmique, contrairement au réductionniste Descartes. C'est ainsi qu'il chercha un lien entre la chute d'une pomme et le mouvement de la lune. Il introduisit donc G, la première 'constante cosmique" appelée couramment "constante universelle", ce qui signifie que c'est une grandeur physique mesurable invariante en tout lieu et en tout temps. 
+
+On rejoint alors le concept de la Permanence Cosmique de Parménide, qui contredisait Héraclite d'Elée, pour qui "rien n'est constant sauf le mouvement". Bien au contraire, la vraie Science  redémarrait avec cette constante cosmique permanente. Surtout que d'autres constante cosmiques allaient suivre, comme la fameuse constante de Planck ci-dessus. Contrairement à l'affirmation courante, réductionniste, qui veut que cette constante ne s'applique qu'en micro-physique, cette constante de Planck est absolument essentielle au niveau cosmique. Par exemple, elle apparaît déjà dans le calcul du rayon d'une étoile.
+
+Les observations astronomiques ont permis de mesurer la vitesse-lumière, troisième constante cosmique. Il a suffit d'observer les satellites de Jupiter pour constater une déviation progressive pendant 6 mois, qui se compense pendant les 6 mois suivants, donc manifestement due au mouvement de la Terre, et à une vitesse finie de la lumière. Grâce à l'arpentage du système solaire réalisé par l'Académie de Paris, à partir de la distance Terre-Mars, obtenue par parallaxe stellaire dans une mission en Guyane, on put en inférer la distance Terre-Jupiter, et ainsi Roemer put en déduire c, à l'observatoire de Paris On se rendit compte qu'elle était beaucoup trop rapide pour pouvoir être mesurée par des moyens terrestres. Mais, par contre, elle s'avéra très lente dès qu'on aborde les distances cosmiques. Ceci est d'une importance cruciale: l'opinion commune qui veut que la vitesse c soit une vitesse limite est contradictoire avec un Cosmos bien ordonné, qui nécessite au contraire des vitesses d'interaction très rapides.
+
+Rappelons que, en toute rigueur, la théorie de la Relativité de Poincaré autorise deux domaines : l'un, le monde ordinaire, est peuplé de bradyons, dont la vitesse limite est effectivement c. L'autre est peuplé de tachyons dont c est, au contraire, la vitesse limite inférieure. La constante cosmique c est donc une frontière entre deux domaines. Beaucoup nient l'existence de ces tachyons, mais une observation confirme leur existence : l' oscillation non-Doppler dans les quasars. C'est un effet qui n'est pas considéré comme 'réaliste' par les officiels, car il contredit le dogme officiel qui nie l'existence des tachyons, donc cette oscillation cosmique n'est pas vérifiée, faute de crédits (voir le chapitre 7 qui détaille les procédures ineptes du système scientifique officiel).
+
+\subsection{Le Principe Conceptuel}
+ 
+
+Dans les 30\% d'énergie cosmique effective ci-dessus, le nombre d'atomes d'Hydrogène, a été prédit correctement par Eddington dans une formule très élégante et simple, précise au millième près, rappelée dans la note 3.4. De plus son interprétation statistique de la corrélation des grands nombres conduit à une autre formule du rayon critique de l'Univers, qui, précisément, ne dépend pas de c. Le rapprochement des deux méthodes conduit à une valeur de G au milliardième (Annexe 2).
+
+Le point essentiel est que la formule du rayon d'Eddington est du même type que celle de l'atome, apparaissant comme une élimination de c entre la longueur d'onde de l'électron et le rapport de force quantique-gravitation. Le rapport du rayon de l'atome à cette longueur d'onde de l 'électron est la constante électrique $a \approx 137.0359991$ (voir ch. 4).
+  
+Mais Eddington, pourtant d'abord reconnu comme étant le meilleur théoricien de l'époque, a été unanimement rejeté par ses soi-disant "pairs" (sauf Schrödinger, le plus lucide des pères fondateurs classiques). Il faut reconnaître que sa Fundamental Theory est très difficile à comprendre, même pour des spécialistes comme Schrödinger. 
+
+
+Mais surtout, dans le contexte réductionniste ambiant, on ne pouvait imaginer que la cosmologie puisse être aussi simple. On a invoqué que la sénilité d'Eddington était responsable de son net glissement vers un traitement pythagoricien de la physique.
+
+C’est une sorte de miracle qu’à partir des considérations complexes, utilisant des mathématiques de haute volée qu’on peut tirer des formules finales d’ Eddington une image simple et claire de l’univers (note N.3.5). C’est la claire manifestation du Principe Conceptuel qui fonde la Science.
+
+
+
+\subsection{Le Cosmos anthropique}
+
+A partir des trois constantes cosmiques ci-dessus, G, $\hbar$ et c on peut calculer trois quantités fondamentales, qu'on appelle les unités de Planck. La masse de Planck, 22 ng a une interprétation directe claire, mas signalée nulle part : elle est voisine de la masse de la plus grosse cellule humaine, l'ovocyte. Par contre, la longueur et le temps de Planck sont beaucoup trop petits pour avoir une interprétation directe, mais interviennent de façon décisive dans les relations holographiques gouvernant l'Univers critique (note N.3.6). 
+
+Noter qu'une autre circonstance vient brouiller encore plus cette Science cosmique si claire. On a osé introduire un système d'unités international faisant intervenir 7 grandeurs fondamentales, grotesque déviation détaillée dans l'annexe 1. 
+
+La conscience humaine ayant retrouvé, grâce à la cette possibilité d’interpréter simplement les résultats Eddington, une place centrale dans le Cosmos, qu'en est-il des autres constantes biologiques ?
+
+D'après le livre prophétique de Shrödinger "Qu'est-ce que la vie?", qui annonçait la biologie moléculaire, une caractéristique biologique essentielle est la température, élément essentiel des mutations. En effet, l'ours polaire et l'antilope africaine ont la même température, ce qui est, à priori, un gâchis terrible d'énergie. Il faut donc que l'impératif de mutation soit primordial.
+
+En introduisant les longueurs d'onde de l'électron et de l'Hydrogène, le principe holographique définit la température de l'Univers (note 3.7). En la comparant à la température des mammifères, on obtient le facteur d'échelle, correspondant à $37.2 C$, qui est lié au rayon d'une cellule, elle-même moyenne entre le rayon de l'Univers et la longueur de Planck ci-dessus. 
+
+    Par ailleurs nous avons détecté dans l'ADN la présence manifeste des constantes principales de la physique. Par exemple la masse moyenne des quatre nucléotides A,T,G,C est voisine de la masse de Fermi, si importante en physique de particules. Les couples AT et GC ayant pratiquement la même masse, la masse du codon complet, comportant 6 nucléotides, est bien définie, et est voisine de 1837 fois la masse d'un atome d'Hydrogène, lui-même 1837 fois la masse d'un électron. Personne n’a signalé ce fait essentiel, car il prouve le caractèe universel de la vie. On voit sur cet exemple combien est néfaste la séparation entre les disciplines, les biologistes n’ayant vu aucun intérêt à considérer la masse atomique des nucléotides.
+
+    De plus cette masse du bi-codon s'inscrit dans l'analyse tachyonique de la période non-Doppler des quasars (note 6). Donc les codons de l'ADN sont en connexion avec l'horloge cosmique absolue. Rappelons que tout ordinateur s'appuie sur une horloge. D'où la proposition que l'hélice d'ADN soit un hologramme-ligne. La prédiction qu'elle est effectivement parcourue par un courant électrique a été confirmée récemment. Du coup, les découvertes de Benvéniste sur la mémoire de l'eau reposent sur une base solide  (chapitre 6).
+
+La vie est donc bien un phénomène cosmique. Par ces correspondances, la vie trouve une place centrale dans l'Univers. 
+
+A noter que les officiels ont introduit un "principe anthropique" qu'ils ont utilisé à contre-sens, prétendant que le Cosmos servait l’humain. En fait, il est plus logique de considérer que le Cosmos calculateur se dote de  "périphériques" pour accompagner ses calculs. 
+
+
+\subsection{Le demi-rayon critique d'Univers en 3 minutes}
+
+     L'université d'Orsay a octroyé une année sabbatique 1997-98 au professeur d'holographie Sanchez pour qu'il présente deux rapports sur l'application du principe holographique à la physique théorique. Dans ses trois premières minutes, il a appliqué ce qu'il enseigne à ses étudiants : tout domaine doit d'abord s'appuyer sur les trois constantes universelles les plus adaptées au domaine considéré. En cosmologie, il faut donc remplacer c, vitesse beaucoup trop lente, par une autre constante universelle. Le plus immédiat est la masse moyenne de l'électron, du proton et du neutron, les trois particules principales de la physique atomique, ce qui revient à la formule d'Eddington ci-dessus, puisque les masses du proton et du neutron sont voisines. 
+
+Le demi-rayon critique de l'Univers, donc sa masse, ont été ainsi obtenu en trois minutes d’un calcul élémentaire obligatoire, que personne n’a fait pendant un siècle.
+
+Quelques semaines après, "l'holographie toponique" (Note 3.10) était mise en évidence, et devant le refus de l'Université d'Orsay de prendre l'article correspondant au sérieux "L' Univers conserve-t-il l'information ?", il fut mis sous pli cacheté en Mars 1998 à l'Académie des sciences. Le doyen d'Orsay, Jean-Claude Roynette, s'est basé sur une expertise anonyme négative, dont une indiscrétion fait penser qu'il s'agit de Jean-Jacques Lévy-Leblond (annexe 3). 
+
+
+\subsection{Notes du chapitre 3}
+ 
+F.M. Sanchez. Coherent Cosmology Vixra.org,1601.0011. Springer International Publishing AG 2017. A. Tadjer et al. (eds.), Quantum Systems in Physics, Chemistry, and Biology, Progress in Theoretical Chemistry and Physics 30, pp. 375--407. DOI 10.1007/978-3-319-50255-7-23. 
+
+F.M. Sanchez, V.A. Kotov,  Grossmann M., Veysseyre R., Weigel W., Bizouard C., Flawisky  N., Gayral D., Gueroult L., Back to Cosmos, Progress in Physics, vol 15, p. 123-142 (2019). 
+
+
+
+\subsubsection{N.3.1. Taux 30\% d'énergie gravitationnelle critique  }
+
+L'énergie gravitationnelle d'une boule homogène de masse $M$ et de rayon $R$ est de module $E_{grav} = (3/5)GM^2/R$. La vitesse de libération à la surface d’une spère de rayon $R$ est $v =\sqrt(2GM/R)$. La condition critique est $v = $c, d'où  $R/2 = GM/c^2$, et donc $E_{grav} = (3/10) Mc^2$, où $Mc^2$ est l'énergie de Poincaré. Il y a donc 70\% de l'énergie qui est sous une forme ineffective. \textit{La question de l’énergie noire est donc un faux problème}.
+
+
+\subsubsection{N.3.2. Le facteur 2 holographique d'Archimède}
+
+Archimède a montré que dans un cercle de rayon unité, la circonférence est le double de son aire. Il en résulte directement la condition critique. En effet, appliquant ceci au disque médian de la sphère universelle, en utilisant pour unité d’aire le carré de la longueur de Planck, cela revient à compter sur sa circonférence le nombre de quanta de longueur (topon) qui s’identifie avec la longueur d’onde associée à la masse universelle. Cette longueur est $10^{61}$ plus petite que la longueur de Planck, considérée par les officiels comme le quantum d’espace. Le mur de Planck vole en éclats : il est repoussé d’un facteur $10^{61}$. Voir la note N.3.6. qui justifie, à partir de là, l’énormité du Cosmos. 
+
+
+
+\subsubsection{N.3.3. L'Univers Holique}
+
+ Le mouvement d'un mobile $(r,v)$ dans un champ de gravitation est caractérisé par $rv^2 = Gm_G$, où $m_G$ est une masse caractéristique. Considérant la 3iéme loi de Keper comme Diophantienne, c’est-à-dire concernant les nombres entiers de Pythagore, elle se résoud en $T^2 = L^3 = n^6$. D'où $L = n^2$, la loi des orbites dans l'atome d'Hydrogène, caractérisée par la forme $rv = \hbar/m$. Il y a donc une sorte de symétrie entre les constantes cosmiques $G$ et $\hbar$. Considérons le mouvement défini par le système suivant :
+ 
+\begin{equation}
+r v^2 = Gm_e
+\end{equation}
+
+\begin{equation}
+r v = \hbar/m_p
+\end{equation}
+
+utilisant les masses de l'électron et du proton. D'où, avec la masse de Planck $m_P = \sqrt{\hbar c/G}$ :
+
+\begin{equation}
+c/v = m_P^2/m_em_p = \sqrt{M/me}                 ~~~~           M = m_P^4/m_em_p^2
+\end{equation}
+
+En identifiant cette masse à la masse critique de l'Univers, c'est  l'Univers statistique d'Eddington, voir note suivante.
+
+
+\subsubsection { L’Univers d'Eddington} 
+
+Par des raisonnements très généraux, associés à la matrice symétrique $16 \times 16$, qui comporte $136$ éléments indépendants, Eddington arriva à la conclusion que le nombre d'atomes dans l'Univers est $N_{Edd} = 136 \times 2^{256}$. En fait, cela s'applique pour la partie effective $3/10$ ci-dessus. On en déduit la masse $M$  et le rayon $R$ de l'Univers critique d'Eddington:
+
+\begin{equation}
+N_{Edd}  = 136 \times 2^{256}  =   (3/10) M/m_H   ~~ \rightarrow   M = 8.7848 × 10^{52} kg   ~~ \rightarrow    R = 13.79 × milliards d' années-lumière
+\end{equation}
+
+Cela confirme l'exitence de la matère noire, qui occupe une part importante des 30 \% effectifs de l'Univers. D'autre part, la condition critique a été vérifiée à partir des propriétés du rayonnement de fond, et en supposant que ce rayon critique $R$ est lié au décalage spectral relatif proportionnel à la distance galactique $d$, par la formule la plus simple: $\Delta l/l = d/R$, on en déduit que le rayon de Hubble s'identifie avec ce rayon critique  $R$. En effet, La mesure directe par les supernovae de type 1a est de  $13,6(6) Gal$, est bien compatible avec $R$ ci-dessus.
+
+D'autre part, Eddington interpréta la relation des grands nombres par la relation statistique élémentaire :
+
+\begin{equation}
+R/2 \sigma = \sqrt{M/m1}
+\end{equation}
+
+
+où $m_1$ est une masse de référence et $\sigma$ l'écart quadratique moyen pour une seule particule. La racine carrée est classique en physique statistique. En posant $\sigma  = \hbar /cm_2$, où $m_2$ est une seconde masse de référence, la vitesse $c$ s'élimine, et la masse de Planck s'introduit :$ m_P  = \sqrt{\hbar c/G} \approx 22 ng$, voisine de celle de l'ovocyte humain. En identifiant les masses $m_1$ et $m_2$ avec celles de l'électron et du proton on obtient la valeur limite du rayon d'une étoile quand son nombre d'atomes tend vers l'unité : 
+
+\begin{equation}
+R = 2\hbar^2/Gm_em_p^2 \approx 13.8 milliards d'années-lumière, formule où la vitesse c s'élimine 
+\end{equation}
+
+
+On retrouve donc le même rayon $R$, qui est conforme à l'estimation officielle actuelle de l'âge de l'Univers, sauf que ce ne peut être un âge, car on n'a utilisé que des constantes cosmiques, donc invariantes. La masse de l'Univers s'écrit :
+
+\begin{equation}
+M = m_P^4/m_em_p^2
+\end{equation}
+
+Le rapprochement des deux formules pour $M$ implique, en introduisant la masse du neutron:
+
+\begin{equation}
+M = m_P^4/m_em_pm_n
+\end{equation}
+
+ 
+Le terme correcteur est significatif et permet de préciser $G$ au milliardième près, voir Chapitre 8.
+ 
+
+
+\subsubsection {N.3.5. L'holographie "toponique" donne la fréquence de l'oscillation universelle et justifie l'énormité de l'Univers}
+
+       La considération des longueurs d'onde de l'électron, du proton et de l'Hydrogène, à la fois atomique et moléculaire se sont avérées décisives, confirmant que ces particules se propagent par onde, donc qu'elles sont soumises à une oscillation universelle matière-antimatière. Pour calculer celle-ci, il est logique de considérer la longueur d'onde de l'Univers lui-même, appelée "topon" 
+
+
+\begin{equation}
+d = \hbar/Mc  \approx 4\times \approx 10^{-96} mètre 
+\end{equation}
+
+
+c'est une longueur encore plus petite que la longueur de Planck, et ceci par un facteur énorme $10^{61}$. On en déduit la fréquence universelle : 
+
+
+\begin{equation}
+f = c/d \approx  7 \times 10^{103}  Hertz
+\end{equation}
+
+c'est une fréquence énorme. En appliquent la croissance de Moore qui suppose un doublement annuel des fréquences accessibles, il faudrait plus d'un siècle pour atteindre cette valeur.
+     En tenant compte de la relation critique : $d = 2l_P^2/R$ , ce qui s'écrit sous forme holographique :
+
+\begin{equation}
+\pi(R/l_P)^2 = 2 \pi R/d 
+\end{equation}
+
+
+qui s'identifie avec l'entropie de Bekenstein-Hawking d'un trou noir ayant le rayon de l'Univers. Le facteur 2 est considéré comme le rapport de la circonférence sur l'aire d'un disque de rayon unité, ce qui est le testament d'Archimède dans l'espace $2D$.
+
+
+      Comment passer à l'espace $3D$ ? Il suffit de faire tourner ce disque autour d'un diamètre. On considère donc une série de $N$ cercles, ce qui prolonge la relation holographique en introduisant la longueur d'onde $\lambdabar_N = N d$  :,
+
+
+\begin{equation}
+\pi (R/l_P)^2 = 2 \pi R/d  = N 2\pi R/\lambdabar_N 
+\end{equation}
+
+
+Pour que cela donne un quantinuum, c'est-à-dire une quasi-continuité, $ N$ doit être très grand. Or nous avons rencontré deux grands nombres, d'Eddington et de Lucas, qui sont liés respectivement au proton et à l'électron :
+
+
+\begin{equation}
+R/2\lambdabar_p \approx 2sqrt{(10/})N_{Edd}     ~~~~   R/2\lambdabar_e \approx N_L 
+\end{equation}
+
+
+
+On interprète donc la relation ci-dessus $R/2\lambdabar_e \approx N_L$ comme une condition de résonance, et l'électron est associé au double du grand nombre de Lucas : $R/\lambdabar_e \approx 2 N_L = 2^{128- 2}$. Or $2^{12}8$ est un nombre courant en informatique : l'Univers se comporte bien comme un ordinateur.
+
+En confrontant les deux grands nombres, on arrive à la corrélation au milliardième, obtenue en faisant intervenir le boson de jauge W : $(40/3)136/72 \approx \Gamma(a/137)2 p2/pW\sqrt(pW H)$, où $\Gamma$ est  la constante d'Atiyah, qui réunit la physique et les mathématiques, voir chapitre 8. Il apparaît le rapport canonique entre la constante d'Eddington et l'entier canonique 137, ainsi que $p_W = 6\pi^5$, l'approximation de Lenz-Wyler du rapport de masse proton-électron p, tandis que H est le rapport de masse Hydrogène-électron, voir annexe 2 sur les constantes physico-mathématiques. 
+
+
+\subsection{N.3.6. La température holographique de l'Univers }
+
+     Si on introduit la longueur d'onde réduite de l'électron $\lambdabar_e =  \hbar/m_ec$, le rayon $R$ vérifie :
+
+\begin{equation}
+R/2\lambdabar_e = \hbar c/Gm_p^2 = F_q/FG \approx N_L
+\end{equation}
+
+
+où $N_L = 2^{127}-1$ est le grand nombre premier de Lucas et $F_G$ est la force gravitationnelle dans la molécule d'Hydrogène $Gm_p^2/r^2$ et $F_q$ la force nominale quantique $\hbar c/r^2$, ce qui s'écrit sous forme holographique suivante, en introduisant la longueur d'onde $\lambdabar p$ du proton et celle $\lambdabar H2$ de l'Hydrogène:
+
+\begin{equation}
+2\pi R/\lambdabar_e = 4\pi (\lambdabar_p /l_P)^2  \approx (4\pi 3) (\lambdabar_{CMB}/\lambdabar_{H2})^3
+\end{equation}
+
+
+d'où la forme holographique composée :
+
+\begin{equation}
+N_L \approx 2\pi (\lambdabar_{CMB}/\lambdabar_{e}) \times \pi (\lambdabar_{CMB}/\lambdabar_{H})^2   ~~  \rightarrow TCMB  \approx 2.72582045  Kelvin    (mes. 2.7255(6) K)
+\end{equation}    
+
+La température du fond cosmique est bien invariante, contrairement aux thèses officielles.
+
+En multipliant cette température cosmique par le facteur d'échelle $8 \pi^2/ln2$, on obtient 310.50 Kelvin, soit $37.3 C$, la température des mammifères.
+
+
+\subsubsection{N.3.7. La connexion cosmo-tachyonique de l'ADN} 
+
+      On observe que la longueur qui correspond à la période non-Doppler des quasars est donnée par la combinaison tachyonique des constantes $G$,  $\hbar$ et $m_{cd}$, la masse du bi-codon d'ADN, dans une formule encore plus simple :
+      
+\begin{equation}
+l_K = ct_K  = \hbar^2/2Gm_{cd}^3 
+\end{equation}      
+     
+Les codons de l'ADN sont donc connectés à l'horloge absolue des quasars. On en déduit que l'hélice ADN est un hologramme-ligne. On a effectivement observé qu'un courant électrique circule le long de l'ADN, ce qui réhabilite la "mémoire de l'eau", voit chapitre 6.
+
+
+
+
+\subsubsection{N.3.8.Le calcul en 3 minutes du demi-rayon de l’Univers}
+
+La physique de base énonce que, avant d’aborder un problème, il faut examiner quelles sont les quantités physiques lièes aux trois constantes universelles les plus pertinentes dans le problème considéré. Pourquoi trois ?, car c’est le nombre des entités de base : le  temps, la longueur et la masse. Or en cosmologie la vitesse de la lumière est beaucoup trop lente pour assurer une cohésion cosmique, comme expliqué dans le chapitre 3 ci-dessus. A côté des constantes inévitables de Newton et de Planck, le plus simple est de prendre la moyenne des trois masses principales de la physique quantique : l’électron, le proton et le neutron. On ne peut alors calculer qu’une longueur et un temps. Or les mesures astrophysiques sont des mesures de longueur, 
+
+
+On obtient ainsi la moitié de 13.8 milliards d’années-lumière 
+
+
+Le facteur 2 est caractéristique de la relation critique d’un trou-noir-univers. Comme  les masses du neutron et du proton sont très voisines, on obtient la même formule que celle d’Eddingon ci-dessus, mais celui-ci n’a pas signalé ce point essentiel que la vitesse de la lumière c n’apparaît pas dans la formule. En effet, comme tous les théoriciens, Eddingon a utilisé un système d’unités où $c = 1$. Cette circonstance malencontreuse assimile le temps et l’espace, ce que même Poincaré, le concepteur de la Relativité et de l’espace-temps à 4 dimensions, avait fortement déconseillé de faire.
+
+
+L’erreur générale a été de considérer la vitesse lumière comme incontournable, ce qui est contraire à la cohérence cosmique, inhérente au concept de Cosmos.
+
+
+\section{Chapitre 4. La question des grands nombres}
+
+
+\section{Chapitre 5.L'état de la cosmologie officielle}
+
+
+\section{Chapitre 6. 30 ans de perdus en Bio-médecne}
+
+
+\section{Chapitre 7. Les dérives d'un système secientifique en perdition}
+
+
+\section{Chapitre 8. La grande réunification}
+
+
+\section{Chapitre 9. Prospective}
+
+
+
+
+
+
+
 \section{Conclusions}
 \label{sec:headings}
 
@@ -144,29 +497,124 @@ On y voit la représentation (étonnement sous forme d'une droite!) de divers pa
 Voir Figure \ref{fig:figure_label}. Pour plus d'explications. \footnote{http://vixra.org/abs/1904.0218}
  
 
+
+
+
+\begin{appendix}
+
+%This is the appendix section
+
+\subsection{Glossaire}
+
+This is the glossary section for the definition of the terms used in this paper.
+
+\begin{itemize}
+\item Axe Topologique : ordonnancement des structures principales du Cosmos.
+\item Antimatière (re-définition): matière qui oscille en opposition de phase avec la matière
+environnante
+\item Big-Bang (redefinition): Terme utilise pour la premiere fois par Fred Hoyle. Phase de reconstruction d’un univers particulaire. Dans la cosmologie cohérente il est permanent
+\item Big crush (re-définition) phase de déconstruction d’un univers particulaire
+\item Black Hole
+\item Chronon (néologisme): atome insécable de temps, entre un bang et un crush
+\item Cosmologie cohérente (néologisme) : cosmologie où tous les Univers particulaires
+sont équivalents. S’oppose au Multivers disparate officiel qui attribue des propriétés
+différentes à une série indéfinie et non observable d’univers.
+\item Cosmos: ensemble de tout ce qui existe.
+\item Dé-synchronisation : décalage temporel provoqué lors d’un déplacement, provoqué par déphasage dans le processus de reconstruction.
+\item Equation Diophantienne équation portant sur des nombres entiers
+\item Grand Cosmos: voir cosmos
+\item Gravitonde (néologisme): désigne l’onde associée à un graviton, quantum d’énergie
+qui disparaît d’un atome émetteur pour se retrouver sur un atome récepteur après un
+calcul cosmique.
+\item Groupe local : groupe de galaxies contenant la Galaxie, notre voie lactée.
+\item Gluonde
+\item Hol: 
+\item Holic:
+\item Immergence (néologisme) Faculté du tout à expliquer les parties. S’oppose à la
+classique ‘émergence’, qui attribue à un ensemble des propriétés nouvelles,
+étrangères à celles de ses éléments constitutifs.
+\item Inertie Reconstitution cosmique d’un objet et de son mouvement par rapport au Cosmos
+\item Infini (obsolète) concept inventé par les formalistes pour simplifier certains calculs,
+notamment les séries.
+\item Intrication (ou Non-séparabilité) : manifestation de l’ordonnancement cosmique entre
+les univers particulaires
+\item Matière noire : matière qui oscille en quadrature de phase avec la matière
+environnante
+\item Mur de Planck (obsolète) : limite spatio-temporelle officielle. La cosmologie
+Cohérente le repousse d’un facteur $10^{61}$, résolvant ainsi l’énigme de la densité du
+vide quantique, $10^{122}$ fois l’énergie moyenne cosmique.
+\item Neutrons : particules remontant l’organisation de l’Univers, en apparaissant dans les
+espaces inter-sidéraux, à raison d’un neutron par siècle dans le volume d’une
+cathédrale.
+\item Nombre réel (trompeur et obsolète): type de nombre inventé par les mathématiciens
+formalistes, mais qui interdit tout calcul pratique, donc cosmique.
+\item Observable Universe
+\item Permanent Big bang
+\item Photonde (néologisme): désigne l’onde associée à un photon, quantum d’énergie qui
+disparaît d’un atome émetteur pour se retrouver sur un atome récepteur, après un calcul cosmique.
+\item Préscience (néologisme) connaissances partielles hors cosmos.
+\item Principe Conceptuel (néologisme) : Le Cosmos est ordonné par des lois esthétiques,
+compréhensibles par les humains. Il remplace le Principe anthropique officiel, mal défini et objet de graves contre-sens.
+\item Principe Cosmologique Parfait (re-définition) : chaque Univers particulaire est
+globalement homogène, isotrope et invariant.
+\item Principe Holique Idéalisation diophantienne du Principe Holographique
+\item Principe Holographique principe expliquant la structuration du Cosmos en identifiant
+des variétés topologiques de différentes dimensions. Il relie l’énormité du cosmos, à
+partir de la quantification nécessaire de la constante d’Archimède pi.
+\item Quantinuum (néologisme) : ensemble d’états discrets, par opposition au continuum.Continuum (obsolète) idéalisation des formalistes, rendant toute compréhension
+impossible.
+\item Rayonnement thermo-cosmique rayonnement interne du Cosmos. Appelé CMB
+(Cosmic Microwave Background) par la science pré-science.
+\item Rayon critique : rayon de chaque univers particulaire. Il s’identifie avec le ‘rayon de
+Hubble’ directement mesurable. C’est aussi le Rayon de Schwarzschild de chaque
+Univers particulaire considéré comme un trou noir dont la particule est la singularité
+centrale.
+\item Récession galactique : répulsion entre amas de galaxies permettant de renouveler
+l’Univers au profit de nouveaux neutrons
+\item Référentiel d’inertie tout référentiel en mouvement linéaire dans le Cosmos. La pré-science était incapable de le définir.
+\item Schwarzschild radius
+\item Science (re-définition) : connaissance des lois du Cosmos.
+\item Tachyon: particule se déplaçant plus vite que la lumière. Il a été exclu par la
+préscience.
+\item Toponde/Topon : (néologisme) atome insécable d’espace
+\item Trou noir : miniaturisation d’un univers particulaire. Les trous noirs ont pour fonction
+d’évacuer la matière interne d’un amas galactique.
+\item Univers: l’écume immergente du Cosmos, $10^122$ fois moins énergétique
+\item Univers particulaire (néologisme) : partie de l’Univers qui construit et déconstruit chaque particule.
+\item Variables cachées (obsolète) : dans la préscience, causes invoquées pour expliquer
+l’Univers. Elles s’identifient au Cosmos.
+\item Vide quantique : partie principale du Cosmos.
+\item Vitesse absolue : vitesse par rapport au Cosmos. La vitesse absolue du groupe local est de $620 km/s$.
+\item Visible Horizon:
+\item White Hole
+\end{itemize}
+
+
+\listoftables{}   % table list
+\listoffigures{}
+
+
 \begin{figure}
   \centering
   %\fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
   \includegraphics[width=15cm,height=16cm]{./figures/triaxis.png} 
-  \caption{Representation Geo dimensionelle du couple Univers-Grandcosmos. Dans un super espace 3D, les logarithmes naturels de temps, de longueurs et de masses sont consideres comme vecteurs. Le rapport logarithmique du rayon du grand cosmos avec la longueur d'onde de l;electron Compton fait apparaitre un vecteur norme projetant longueur et temps avec une proportion commune; le rayon de Hubble par la longueur d;onde de l'electron Compton et pour le rapport de masse; on considere $M^{\prime}$ par la masse de l'electron. $M^{\prime}$ etant la masse critique dans le Grandcosmos reduit a un hologramme spherique, ceci demontre la confirmation geometrique du principe holographique etendu (2D-1D)applique a l'univers d'entropie de Bekenstein Hawking. L'existence d'un grand cosmos ne peut plus etre niee depuis que la relation entre $e$, $a$ et les logarithmes impliques atteignent une precision de $10^{-7}$.}
+  \caption[Representation Geo dimensionelle du couple Univers-Grandcosmos]{Representation Geo dimensionelle du couple Univers-Grandcosmos. Dans un super espace 3D, les logarithmes naturels de temps, de longueurs et de masses sont consideres comme vecteurs. Le rapport logarithmique du rayon du grand cosmos avec la longueur d'onde de l;electron Compton fait apparaitre un vecteur norme projetant longueur et temps avec une proportion commune; le rayon de Hubble par la longueur d;onde de l'electron Compton et pour le rapport de masse; on considere $M^{\prime}$ par la masse de l'electron. $M^{\prime}$ etant la masse critique dans le Grandcosmos reduit a un hologramme spherique, ceci demontre la confirmation geometrique du principe holographique etendu (2D-1D)applique a l'univers d'entropie de Bekenstein Hawking. L'existence d'un grand cosmos ne peut plus etre niee depuis que la relation entre $e$, $a$ et les logarithmes impliques atteignent une precision de $10^{-7}$.}
   \label{fig:figure_label}
 \end{figure}
 
 
-\subsection{Lists}
+%\subsection{Lists}
 \begin{figure}
   \centering
   %\fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
   \includegraphics[width=15cm,height=16cm]{./figures/figure.png}
-  \caption{L'axe topologique. Le double logarithme naturel (y = lnln(Y)) de quantites physique sans dimensions 
+  \caption[Axe Topologique]{L'axe topologique. Le double logarithme naturel (y = lnln(Y)) de quantites physique sans dimensions 
 (Y) corresponds a la corde dimensionelle de series n = 4k + 2, de k = 0 a k = 7, montrant la periodicite de Bott qui est a l'origine du nom Axe Topologique.}
   \label{fig:figure_label}
 \end{figure}
-\begin{itemize}
-\item Axe Topologique
-\end{itemize}
 
 
+\end{appendix}
 \bibliographystyle{unsrt}  
 %\bibliography{references}  %%% Remove comment to use the external .bib file (using bibtex).
 %%% and comment out the ``thebibliography'' section.
@@ -180,22 +628,15 @@ Issues in Cosmology. Ed. J.-C. Pecker and J. Narlikar. Cambridge Univ. Press,
 2006; p. 257--260.
 
 \bibitem{Sanchez4} Sanchez F; M. ``Holic Principle: The coherence of the Universe`` (Sept 1995), Entelechies, 16th ANPA, 324--344.
-
 \bibitem{Grosmann} Grosmann, M. and Meyrueis P. ``Optics and Photonics Applied to Communication and Processing''. SPIE.  Jan 1979.
 \newblock Optics and Photonics Applied to Communication and Processing.
 \newblock In {\em SPIE (SPIE), 1979 
   International Conference on}, pages . SPIE, 1979.
-
 \bibitem{Grosmann2} Grosmann, M and Rebordão, José and Meyrueis, Patrick, 1985,02,p761--765,Propagation Of Waves In Optical Systems: Reformulation Of Huyghens Principle For Aspheric Systems,
 volume 491, Proceedings of SPIE - The International Society for Optical Engineering, doi:10.1117/12.968010
-
 \bibitem{Kress} Digital Diffractive Optics: An Introduction to Planar Diffractive Optics and Related Technology, by B. Kress, P. Meyrueis, pp. 396. ISBN 0-471-98447-7. Wiley-VCH , October 2000.
 \newblock An Introduction to Planar Diffractive Optics and Related Technology.
-
 \bibitem{Sanchez5} F.M. Sanchez, V. Kotov, M. Grosmann, D. Weigel, R. Veysseyre, C. Bizouard, N. Flawisky, D. Gayral, L. Gueroult, Back to Cosmos
 \newblock {\em arXiv preprint viXra:1904.0218}, 2019.
-
 \end{thebibliography}
-
-
 \end{document}
