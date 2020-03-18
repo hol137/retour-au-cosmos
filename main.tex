@@ -32,8 +32,18 @@
 \usepackage{microtype}      % microtypography
 %\usepackage[final]{graphicx}% graphics
 
-\title{Retour vers le \emph{cosmos}}
-%{F.M. Sanchez,\ M. Grosmann,\ B. Kress,\ N. Flawisky,\ L. Gueroult, \textit{Cosmic Holography}}
+
+
+\usepackage{tocloft}
+\cftsetindents{section}{0em}{2em}
+\cftsetindents{subsection}{0em}{2em}
+\renewcommand\cfttoctitlefont{\hfill\Large\bfseries}
+\renewcommand\cftaftertoctitle{\hfill\mbox{}}
+\setcounter{tocdepth}{2}
+
+%\begin{document}
+
+\title{Retour vers le \emph{Cosmos}}
 \author{
   F.M. Sanchez~hol137\thanks{Retired Professor} \\
   Department of Physics\\
@@ -53,7 +63,12 @@
   %University of Strasbourg\\
   %Strasbourg, FRANCE \\
   \texttt{d.tassot-at-me.com} \\
-  %% \AND
+   \And
+ C. Bizouard\thanks{Astronome} \\
+  OBSPM\\
+  %University of Strasbourg\\
+  Paris, FRANCE \\
+  \texttt{c.bizouard-at-me.com} \\
   %% Coauthor \\
   %% Affiliation \\
   %% Address \\
@@ -74,19 +89,16 @@
 \begin{document}
 \maketitle
 
-%\begin{abstract}
-%Le modèle du ”Big-Bang”, le modèle ”Cosmhologique”, les radars de la police et les taupes très myopes !
-%\end{abstract}
-
-
 %\{tableofcontents}
-
-
+\tableofcontents
+\clearpage
 % keywords can be removed
 \keywords{Quantum \and Holography \and Cosmos}
 
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
 
-\section{Introduction}
+%\section{Introduction}
 
 Le modèle dit du Big-Bang est une description de l'origine et de l'évolution de l’Univers datant du début du 20éme siècle.
 
