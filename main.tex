@@ -31,6 +31,8 @@
 \renewcommand\cftaftertoctitle{\hfill\mbox{}}
 \setcounter{tocdepth}{3}
 
+\newcommand*{\grabto}[2]{\IfFileExists{#2}{}{\immediate\write18{curl \detokenize{#1 -o #2}}}}
+\grabto{https://www.pnas.org/content/pnas/15/3/168/F2.large.jpg}{F2.large.jpg}
 %\begin{document}
 
 \title{Retour au Cosmos}
@@ -1722,7 +1724,8 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 \begin{figure}
 \centering
 %%\includegraphics[width=14.5cm,height=8.6cm]{./figures/hubble-edwin-1929-ProcNaturalAcad.SciVol15p168.png}https://www.pnas.org/content/pnas/15/3/168/F2.large.jpg
-\write18{wget https://www.pnas.org/content/pnas/15/3/168/F2.large.jpg}
+
+%% \write18{wget https://www.pnas.org/content/pnas/15/3/168/F2.large.jpg}
 %%\href{https://www.pnas.org/content/pnas/15/3/168/F2.large.jpg}{\incudegraphics{F2.large.jpg}}
 \includegraphics{F2.large.jpg}
 \caption [Edwin Hubble 1929]{\textit{Edwin Hubble ProcNaturalAcad-SciVol15p168} - Tracé .} 
