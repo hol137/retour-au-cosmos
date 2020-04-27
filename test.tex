@@ -24,9 +24,6 @@
 \usepackage{microtype}                % microtypography
 %\usepackage[final]{graphicx}
 \usepackage{tocloft}
-
-
-
 %\marginsize{.5in}{.5in}{.75in}{.75in}
 \cftsetindents{section}{0em}{2em}
 \cftsetindents{subsection}{0em}{2em}
@@ -34,8 +31,8 @@
 \renewcommand\cftaftertoctitle{\hfill\mbox{}}
 \setcounter{tocdepth}{3}
 
-%\newcommand*{\grabto}[2]{\IfFileExists{#2}{}{\immediate\write18{curl \detokenize{#1 -o #2}}}}
-%\grabto{https://www.pnas.org/content/pnas/15/3/168/F2.large.jpg}{hubble-orig.jpg}
+\newcommand*{\grabto}[2]{\IfFileExists{#2}{}{\immediate\write18{curl \detokenize{#1 -o #2}}}}
+\grabto{https://www.pnas.org/content/pnas/15/3/168/F2.large.jpg}{hubble-orig.jpg}
 %\begin{document}
 
 \title{Retour au Cosmos}
@@ -138,22 +135,15 @@ On a accepté cette inflation car elle explique une autre caractéristique rév�
     
     
     En outre cet auteur note dans ses conclusions (page 419) : 'Pour le bouddhisme, quand on envisage la question d'un début, la seule position métaphysique qui résiste à l'analyse est celle de l'absence de début'.
-    
+
+
    
    
  \subsubsection{la question du Multivers} 
 Ultime épicycle: devant l'impossibilité d'expliquer les relations entre les paramètres physiques qui paraissent si favorables à la vie, certains cosmologues ont introduit l'idée du Multivers, provoquant un schisme sévère dans la communauté scentifique. Cette idée est réfutée ici par le rétablissement d'un Cosmos unique, parfaitement défini (chapitre 8) et l'identification des constantes biologiques et physiques (chapite 7).
  
  
-  \subsubsection{la directive de Platon}
-
-A la fin de ses Lois (ch 12, 961d) Platon déclare " pout éviter d'errer, les individus et les entités poltiques doivent se fixer un but unique et trouver le chemin singuier (statégie) qui conduit vers ce but.
-
-Ce but unique est évidemment la compréhension du Cosmos. Le moyen qui conduit vers cette connaissance supr\^eme est la méthode scientifique de Pythagore : \textit {chercher les plus belles relations entre nombres entiers.}
-
-Comme disait Hermès Trismégiste "ce qui est en bas est comme ce qui est en haut". L'homme peut appréhender l'énormité du Cosmos, car celui-ci l'a conçu pour l'accompagner dans sa qu\^ete de la plus belle relation entre les nombres entiers les plus petits et les plus grands.
-
-      
+    
     
 
 \subsubsection{Retour au Cosmos}
@@ -1227,19 +1217,19 @@ Le pire, c’est que cette attribution de prix Nobel allait précipiter le sièc
 Après une telle réussite d’Einstein, pourquoi se gêner ?, le copiage devint la règle. Comme le signale Vladimir Arnold : « De même que l’Amérique ne porte pas le nom de Colomb, les résultats mathématiques ne portent presque jamais le nom de ceux qui les ont découverts... C’est arrivé systématiquement à mes maîtres (Kolmogorov, Petrovski, Pontriaguine, Rohlin) comme à mes élèves. Le professeur Michael Berry a formulé les deux principes suivants. Principe d’Arnold : si une notion porte un nom propre, ce n’est pas celui de son créateur ; principe de Berry : le principe d’Arnold s'applique à lui-même. » 
 Les deux figures suivantes prouvent que des résultats erronés sont retrouvés de nombreuses fois par différents labos, ce qui leur procure des publications faciles. Ce schéma est présenté dans les « history plots » « par le Particle Data Group » \cite{Tanabashi}, qui présente cette suite de copiages flagrants sans aucun complexe, comme s’il était parfaitement normal que des labos prestigieux retrouvent des valeurs fausses (voir figure complète). 
 
-La première figure \ref{fig:6:figure6} montre la durée de vie du neutron libre. C’est une mesure très importante, car le neutron est le « remontoire » cosmique. Sans lui les galaxies s’éteindraient inexorablement, voir chapitre 8.
+La première figure montre la durée de vie du neutron libre. C’est une mesure très importante, car le neutron est le « remontoire » cosmique. Sans lui les galaxies s’éteindraient inexorablement, voir chapitre 8.
 
 
-%\begin{figure}
-%\centering
-%\includegraphics[width=13.5cm,height=8.6cm]{./figures/tau-mass-pdg.png}
-%\caption [Mesures de la masse du Tau depuis 1978]{\textit{Mesure de la masse du Tau d'apres Particle Data Group 2019} - Tracé historique.} 
-%\label{fig:7:figure7}
-%\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=13.5cm,height=8.6cm]{./figures/tau-mass-pdg.png}
+\caption [Mesures de la masse du Tau depuis 1978]{\textit{Mesure de la masse du Tau d'apres Particle Data Group 2019} - Tracé historique.} 
+\label{fig:7:figure7}
+\end{figure}
 
 
 
-La seconde figure \ref{fig:7:figure7} publie par \cite{Tanabashi} concerne la masse du Lepton Tau. Cette particule inattendue est toujours inexpliquée par la théorie standard, mais Koyde a trouvé une relation simple permettant de prédire sa valeur, ce qui survint à un moment où la mesure fut corrigée de 3 sigma ( l’écart type représenté par la demie-longueur des traits). On remarquera que l’échelle des masses est donnée en MeV, qui est une unité d’énergie, est la coutume maladroite, alors qu’il est clair, selon la relation de Koide qu’il faut prendre la masse de l’électron comme unité. 
+La seconde figure \ref{fig:6:figure6} publie par \cite{Tanabashi} concerne la masse du Lepton Tau. Cette particule inattendue est toujours inexpliquée par la théorie standard, mais Koyde a trouvé une relation simple permettant de prédire sa valeur, ce qui survint à un moment où la mesure fut corrigée de 3 sigma ( l’écart type représenté par la demie-longueur des traits). On remarquera que l’échelle des masses est donnée en MeV, qui est une unité d’énergie, est la coutume maladroite, alors qu’il est clair, selon la relation de Koide qu’il faut prendre la masse de l’électron comme unité. 
 
 Le comble est ainsi atteint. Comme la relation de Koide ne reçoit aucune interprétation théorique dans le cadre du modèle standard, on l’ignore. Certains évoquent même le hasard. Sa validité sera justifiée dans le chapitre 8 dans le domaine - indiscutable- du milliardième. 
 
@@ -1252,12 +1242,12 @@ La suite était prévisible : plusieurs laboratoires ont confirmés cette valeur
 Le lecteur attentif voit très bien d’où vient l’erreur. 
 
 
-%\begin{figure}
-%\centering
-%\includegraphics[width=14.5cm,height=8.6cm]{./figures/ProgressinPreciseMeasurementsoftheGravitationalConstant.png}
-%\caption [Mesures de la constante de gravitation G depuis 1982]{\textit{Mesures de la constante de gravitation G depuis 1982 d'apres Progress in Precise Measurements of the Gravitational Constant \cite{Wu} par Junfei Wu  Qing Li  Jianping Liu  Chao Xue  Shanqing Yang  Chenggang Shao  Liangcheng Tu  Zhongkun Hu  Jun Luo} - Tracé historique.} 
-%\label{fig:8:figure8}
-%\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=14.5cm,height=8.6cm]{./figures/ProgressinPreciseMeasurementsoftheGravitationalConstant.png}
+\caption [Mesures de la constante de gravitation G depuis 1982]{\textit{Mesures de la constante de gravitation G depuis 1982 d'apres Progress in Precise Measurements of the Gravitational Constant \cite{Wu} par Junfei Wu  Qing Li  Jianping Liu  Chao Xue  Shanqing Yang  Chenggang Shao  Liangcheng Tu  Zhongkun Hu  Jun Luo} - Tracé historique.} 
+\label{fig:8:figure8}
+\end{figure}
 
 
 
@@ -1459,7 +1449,7 @@ Pouvez vous me confirmer les points suivants qui ressortent de la récente « ex
 
 1. L’analyse dimensionnelle c’est de la numérologie.
 
-2. Dans le système d’unité des théoriciens,  Temps = Longueur, on ne limite pas l’apport de l’analyse dimensionnelle.
+2. Dans le système d’unité des théoriciens,  Temps = Longier, on ne limite pas l’apprt de l’analyse dimensionnelle.
 
 3. La Méthode Scientifique exclut l’analyse « à priori » des données expérimentales.
 
@@ -1543,14 +1533,13 @@ On  ne peut être plus clair : une aversion totale pour la simplicité. C'est pr
 
 Pecker va même va jusqu'à critiquer le concept de symétrie, rejetant ainsi la physique des particules. Mais Il a oublié de mentionner dans l'extrait ci-dessus un concept qu'il a détesté tout particulièrement : celui d'analogie, voir son expertise sur lepremier rapport sabbatique de Sanchez:
 
-Voir figure \ref{fig:17:figure17}
 
-%\begin{figure}
-%\centering
-%\includegraphics[width=8.5cm,height=11.5cm]{./figures/Pecker98.jpg}
-%\caption [Rapport de JC Pecker évaluant le travail en cosmologie de Francis M. Sanchez]{\textit{Rapport de J-C Pecker membre de l'Institut professeur honoraire au college de France} - 25 Fev 1998.} 
-%\label{fig:17:figure17}
-%\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=8.5cm,height=11.5cm]{./figures/Pecker98.jpg}
+\caption [Rapport de JC Pecker évaluant le travail en cosmologie de Francis M. Sanchez]{\textit{Rapport de J-C Pecker membre de l'Institut professeur honoraire au college de France} - 25 Fev 1998.} 
+\label{fig:17:figure17}
+\end{figure}
 
 
 Car Pecker n'a jamais pu admette que la simple analogie entre l'atome et l'Univers permettait de calculer le demi-rayon de celui-ci (chapitre 3). Le calcul du rayon de l'atome est le même que celui de l'Univers, sauf que, précisément, ce dernier est plus immédiat, car \textit{il est intuitif d'enlever la vitesse $c$, vitesse évidement trop lente pour assurer une cohérence cosmique.}
@@ -1603,7 +1592,7 @@ En fait ces nombres ne sont que des idéalisations : aucun ordinateur ne peut fa
 
 
 
-
+\subsection{La voie d'Archimède}
 \subsection{Le principe Holographique}
 \subsection{Le Principe Holique}
 \subsection{L'Axe Topologique}
@@ -1616,14 +1605,13 @@ En fait ces nombres ne sont que des idéalisations : aucun ordinateur ne peut fa
 \subsection{Notes}
 \subsubsection{l'Axe topologique}
 
-Voir figure \ref{fig:2:figure2}.
-%\begin{figure}
-%\centering
+\begin{figure}
+\centering
 % \fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-%\includegraphics[width=15cm,height=16cm]{./figures/figure.png}
-%\caption[Axe Topologique]{L'axe topologique. Le double logarithme naturel (y = lnln(Y)) de quantités physique sans dimensions (Y) corresponds à la corde dimensionelle de series n = 4k + 2, de k = 0 a k = 7, montrant la périodicité de Bott qui est à l'origine du nom Axe Topologique.}
-%\label{fig:2:figure2}
-%\end{figure}
+\includegraphics[width=15cm,height=16cm]{./figures/figure.png}
+\caption[Axe Topologique]{L'axe topologique. Le double logarithme naturel (y = lnln(Y)) de quantités physique sans dimensions (Y) corresponds à la corde dimensionelle de series n = 4k + 2, de k = 0 a k = 7, montrant la périodicité de Bott qui est à l'origine du nom Axe Topologique.}
+\label{fig:2:figure2}
+\end{figure}
 
 
 
@@ -1736,7 +1724,7 @@ C'est ainsi que l'école russe produisit des hologrammes de meilleures qualité 
 
 
 
-C'est alors que l'école française reprit la main, en éliminant totalement la nécessité d'un lourd et co\^uteux banc optique, par la méthode de l'hologramme contact, et la possibilté du balayage permettant de faire de grands hologrammes avec de faibles faisceaux lasers, ce qui conduisit à la réalisation d'un metre carré avec un fasceau d'un milliwatt (Juillet 1987). Par la suite Yves Gentet \cite{Gentet} utilisa ces techniques pour obtenir les hologrammes-couleurs, les plus belles images, qui viennent compléter les célèbres images 2D en vraies couleurs de Gabriel Lippmann \footnote{Prix Nobel 1908}. 
+C'est alors que l'école française reprit la main, en éliminant totalement la nécessité d'un lourd et co\^uteux banc optique, par la méthode de l'hologramme contact, et la possibilté du balayage permettant de faire de grands hologrammes avec de faibles faisceaux lasers, ce qui conduisit à la réalisation d'un metre carré avec un fasceau d'un milliwatt (Juillet 1987). Par la suite Yves Gentet utilisa ces techniques pour obtenir les hologrammes-couleurs, les plus belles images, qui viennent compléter les célèbres images 2D en vraies couleurs de Gabriel Lippmann \footnote{Prix Nobel 1908}. 
 
 
 
@@ -1786,7 +1774,7 @@ Il était donc évident dès le départ que la physique est non-locale, mais Ala
 
 Revenons à la découverte effective du laser. Selon une confidence du normalien  Pierre Jacquinot, professeur à Orsay : ``nous avions le laser sous le nez depuis des années, mais vaut mieux ne pas le dire''. Que s'est-il s'est donc passé ?
 
-Le prédécesseur naturel du laser, le maser, fut découvert par Charles H. Townes en 1954, qui les baptisa ainsi. L'initiale m signifiant ``micro-onde'', tandis que le L de « LASER » vient de l'anglais « light » \footnote{traduction de lumière}. Les autres lettres viennent de « Amplified by Stimulated Emission of Radiation ». 
+Le prédécesseur naturel du laser, le maser, fut découvert par Charles H. Townes en 1954, qui les baptisa ainsi. L'initiale m signifiant ``micro-onde'', tandis que le L de « LASER » vient de l'anglais « light » \footnote{qui signifie lumière}. Les autres lettres viennent de « Amplified by Stimulated Emission of Radiation ». 
 
 La condition essentielle est d'obtenir une inversion de population entre deux niveaux d'énergie. C'est beaucoup plus difficile à obtenir dans le domaine visible qu'en micro-onde, car l'émission spontanée qui vide les niveaux est beaucoup plus rapide. 
 
@@ -1946,24 +1934,26 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 
 \listoftables{}   % table list
 \listoffigures{}
-%% \subsection{Lists}
 
-\begin{figure}
-\centering
-%%  \fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-\includegraphics[width=5cm,height=6cm]{./figures/triaxis.png} 
-\caption[Representation Geo-dimensionelle du couple Univers-Grandcosmos]{Representation Geo-dimensionelle du couple Univers-Grandcosmos. Dans un super espace 3D, les logarithmes naturels de temps, de longueurs et de masses sont considérés comme vecteurs. Le rapport logarithmique du rayon du grand cosmos avec la longueur d'onde de l'électron Compton fait apparaitre un vecteur normé projetant longueur et temps avec une proportion commune; le rayon de Hubble par la longueur d'onde de l'électron Compton et pour le rapport de masse; on considere $M^{\prime}$ par la masse de l'électron. $M^{\prime}$ étant la masse critique dans le Grandcosmos réduit a un hologramme spherique, ceci démontre la confirmation géometrique du principe holographique étendu (2D-1D)appliqué a l'univers d'entropie de Bekenstein-Hawking. L'existence d'un grand cosmos ne peut plus \^etre niée depuis que la relation entre $e$, $a$ et les logarithmes impliqués atteignent une précision de $10^{-7}$.}
+
+%\begin{figure}
+%\centering
+  %\fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+%\includegraphics[width=5cm,height=6cm]{./figures/triaxis.png} 
+%\caption[Representation Geo-dimensionelle du couple Univers-Grandcosmos]{Representation Geo-dimensionelle du couple Univers-Grandcosmos. Dans un super espace 3D, les logarithmes naturels de temps, de longueurs et de masses sont considérés comme vecteurs. Le rapport logarithmique du rayon du grand cosmos avec la longueur d'onde de l'électron Compton fait apparaitre un vecteur normé projetant longueur et temps avec une proportion commune; le rayon de Hubble par la longueur d'onde de l'électron Compton et pour le rapport de masse; on considere $M^{\prime}$ par la masse de l'électron. $M^{\prime}$ étant la masse critique dans le Grandcosmos réduit a un hologramme spherique, ceci démontre la confirmation géometrique du principe holographique étendu (2D-1D)appliqué a l'univers d'entropie de Bekenstein-Hawking. L'existence d'un grand cosmos ne peut plus \^etre niée depuis que la relation entre $e$, $a$ et les logarithmes impliqués atteignent une précision de $10^{-7}$.}
   %\label{fig:figure_label}
-\label{fig:1:figure1}
-\end{figure}
+%\label{fig:1:figure1}
+%\end{figure}
 
-\begin{figure}
-\centering
-%% \fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-\includegraphics[width=15cm,height=16cm]{./figures/figure.png}
-\caption[Axe Topologique]{L'axe topologique. Le double logarithme naturel (y = lnln(Y)) de quantités physique sans dimensions (Y) corresponds à la corde dimensionelle de series n = 4k + 2, de k = 0 a k = 7, montrant la périodicité de Bott qui est à l'origine du nom Axe Topologique.}
-\label{fig:2:figure2}
-\end{figure}
+
+%\subsection{Lists}
+%\begin{figure}
+%\centering
+% \fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+%\includegraphics[width=15cm,height=16cm]{./figures/figure.png}
+%\caption[Axe Topologique]{L'axe topologique. Le double logarithme naturel (y = lnln(Y)) de quantités physique sans dimensions (Y) corresponds à la corde dimensionelle de series n = 4k + 2, de k = 0 a k = 7, montrant la périodicité de Bott qui est à l'origine du nom Axe Topologique.}
+%\label{fig:2:figure2}
+%\end{figure}
 
 \begin{figure}[h]
 \centering
@@ -1972,6 +1962,7 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 \label{fig:3:figure3}
 \end{figure}
 
+%% \begin{figure}[h]
 \begin{figure}
 \centering
 \includegraphics[width=14.5cm,height=8.6cm]{./figures/karnak.png}
@@ -1987,6 +1978,8 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 \label{fig:5:figure5}
 \end{figure}
 
+
+%% \begin{figure}[h]
 \begin{figure}
 \centering
 \includegraphics[width=13.5cm,height=8.6cm]{./figures/neutron-lifetime-pdg.png}
@@ -1994,12 +1987,6 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 \label{fig:6:figure6}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=13.5cm,height=8.6cm]{./figures/tau-mass-pdg.png}
-\caption [Mesures de la masse du Tau depuis 1978]{\textit{Mesure de la masse du Tau d'apres Particle Data Group 2019} - Tracé historique.} 
-\label{fig:7:figure7}
-\end{figure}
 
 \begin{figure}
 \centering
@@ -2035,6 +2022,7 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 
 \begin{figure}
 \centering
+%%\includegraphics[width=14.5cm,height=8.6cm]{./figures/Nd3PlusGlassLASER-paper-1973.jpg}
 \includegraphics[width=8.5cm,height=14.5cm]{./figures/schatzmann.png}
 \caption[Courrier d'evaluation de Schatzman]{\textit{Courrier de Schatzman du Département d'Astrophysique Stellaire et Galactique évaluant le rapport sur la cosmologie de Francis M. Sanchez} - 9 Nov 2000.} 
 \label{fig:12:figure12}
@@ -2043,6 +2031,7 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 
 \begin{figure}
 \centering
+%%\includegraphics[width=14.5cm,height=8.6cm]{./figures/Nd3PlusGlassLASER-paper-1973.jpg}
 \includegraphics[width=14.5cm,height=8.5cm]{./figures/h2o-biocentrique.jpg}
 \caption[Schema du Cosmos Biocentrique $H_2O$ ]{\textit{Schema du cosmos biocentrique autour de $H_2O$} - 9 Nov 2000.} 
 \label{fig:13:figure13}
@@ -2087,7 +2076,7 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 \begin{figure}
 \centering
 \includegraphics[width=12.5cm,height=7.5cm]{./figures/Kotov.jpg}
-\caption[Réunion à l'observatoire de Criméee]{\textit{La réunion à l'observatoire de Crimée: 1er rang de droite a gauche: Francis Sanchez, Christian Bizouard, Oya Artun, Valery Kotov. 2ieme rang à droite Jan - directeur de l'Observatoire de -. } 2008}
+\caption[Réunion à l'observatoire de Criméee]{\textit{La réunion à l'observatoire de Crimée: 1er rang de droite a gauche: Francis Sanchez, Christian Bizouard, Oya Artun, Valery Kotov. 2ieme rang à droite Jan directeur de l'Observatoire de Zuerich} 2008}
 \label{fig:19:figure19}
 \end{figure}
 
@@ -2101,44 +2090,9 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 \begin{figure}
 \centering
 \includegraphics[width=13.5cm,height=8.5cm]{./figures/Zpointstriples.png}
-\caption[Relation des Points Triples de l'eau]{\textit{Relation des Points Triples de $H_2O$} - date  2004.} 
+\caption[Relation des Points Triples ]{\textit{Relation des Points Triples de $H_2O$} - date 9 Nov 2000.} 
 \label{fig:21:figure21}
 \end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=13.5cm,height=8.5cm]{./figures/Collegedefrance2004.jpg}
-\caption[Holophysique presentation Collège de France 2004]{\textit{Refundation of critical steady-state cosmology by Holographic and dimensional analysis Collège de France} - date 2004.} 
-\label{fig:22:figure22}
-\end{figure}
-
-%\begin{figure}
-%\centering
-%\includegraphics[width=8.5cm,height=5.5cm]{./figures/HPmonochro.jpg}
-%\caption[HP monochro Collège de France 2004]{\textit{HPmonochro, College de France} - date 2004.} 
-%\label{fig:23:figure23}
-%\end{figure}
-
-%\begin{figure}
-%\centering
-%\includegraphics[width=8.5cm,height=5.5cm]{./figures/HPmonoradial.jpg}
-%\caption[HP monoradial Collège de France 2004]{\textit{HPmonoradial, College de France} - date 2004.} 
-%\label{fig:24:figure24}
-%\end{figure}
-
-%\begin{figure}
-%\centering
-%\includegraphics[width=8.5cm,height=5.5cm]{./figures/ATgaugebosons.jpg}
-%\caption[Axe Topologique: Bosons de jauge, Collège de France, 2004.]{\textit{Axe Topologique: Bosons de jauge, College de France} - date 2004.} 
-%\label{fig:25:figure25}
-%\end{figure}
-
-%\begin{figure}
-%\centering
-%\includegraphics[width=8.5cm,height=5.5cm]{./figures/ATconexions.jpg}
-%\caption[Axe Topologique: Connexions, Collège de France, 2004.]{\textit{Axe Topologique: Connexions, College de France} - date 2004.} 
-%\label{fig:26:figure26}
-%\end{figure}
 
 %\begin{figure}
 %\centering
@@ -2232,5 +2186,4 @@ Petit glossaire des expressions et termes utilisés dans cet essai.
 
 \end{thebibliography}
 \end{appendix}
-
 \end{document}
