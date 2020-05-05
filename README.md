@@ -20,4 +20,4 @@ A latex doc formatted according to the scientific publication requirements.
 |Retour-au-cosmos publication test-with-figures  |[e-journal.sty](e-journal.sty)| [test-with-figures.tex](test-with-figures.tex )       |[latexonline.cc test-with-figures.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fretour-au-cosmos&target=test-with-figures.tex&command=pdflatex)      |
 
 
-test-with-figures.tex
+|[latexonline.cc test-with-figures.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FPandaScience%2FFortySecondsCV&target=template.tex&command=pdflatex)      |
